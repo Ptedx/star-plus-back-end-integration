@@ -1,0 +1,351 @@
+*{
+    color: #cacaca;
+}
+
+html, body {
+    height:100%;
+    font-family: Avenir,sans-serif;
+    margin: 0;
+}
+
+body{
+    background-color: #090b13;
+}
+.menu, section{
+    box-sizing: border-box;
+}
+picture{
+    width: 100%;
+}
+section, footer{
+    padding: 5.6vw;
+}
+h1, h2, h3, h4, h5, h6{
+    color: #f9f9f9;
+}
+ul{
+    padding-left:0;
+}
+/*Seção Planos*/
+.planos{
+    text-align: center;
+    position: relative;
+}
+
+
+.border-box{
+    box-sizing: border-box;
+}
+/*Css menu*/
+.menu{
+    width: 100%;
+    position:fixed;
+    height:70px;
+    font-size: 18px;
+    line-height: 26px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0 36px;
+    z-index: 3;
+}
+.btn-entrar{
+    height: 50px;
+    padding: 0 20px;
+    background-color: #4e4a59;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin: 5px 10px;
+}
+.btn-entrar a{
+    text-decoration: none;
+    color: white;
+}
+#botao{
+    display: none;
+}
+/*CSS Section 1*/
+.inicio{
+    min-height: 100vh;
+    background-image: url('/static/img/background1.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.conteudo{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.conteudo > h3,.conteudo > p{
+    margin: 0;
+}
+.imagem-star{
+    margin:0 auto;
+    width: 100%;
+    margin-bottom: 2vw;
+}
+.combos{
+    display: flex;
+    width: 100%;
+    grid-gap: 24px;
+    list-style: none;
+    justify-content: center;
+}
+.item-combo{
+    width: calc(50% - 12px);
+    display: flex;
+    flex-direction: column;
+}
+.img-combo{
+    margin-bottom: 2vw;
+}
+.btn-assinar{
+    background-color: #6421ff;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 20px 0;
+    font-size: 18px;
+}
+
+.btn-assinar:hover{
+    background-color: #7828ff;
+}
+.space{
+    margin-top: 40px;
+}
+.link-planos{
+    color: #cacaca;
+    font-size: 16px;
+    line-height: 36px;
+}
+/*Lista planos*/
+.opcoes{
+    display: flex;
+    grid-gap:24px;
+    justify-content: center;
+    list-style: none;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.item{
+    max-width: 380px;
+    box-sizing: border-box;
+}
+.popular{
+    background-image: url("/static/img/bestchoice.png");
+    background-size: 100%; 
+    background-repeat: no-repeat;
+}
+
+.series > p{
+    line-height: 26px;
+}
+/*Seção marcas*/
+.marcas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item-marca{
+    width: 50%;
+
+}
+/*Seção Simpsons*/
+.simpsons{
+    padding: 0;
+    position: relative;
+}
+.simpsons h5, .simpsons h2{
+    margin-top: 0;
+}
+
+.simpsons > div{
+    position: absolute;
+    top: 0;
+    width: 40%;
+    max-width: 640px;
+    padding: 0 2vw;
+    padding-top: 5vw;
+}
+/*Seção dispositivos*/
+.dispositivos{
+    text-align: center;
+}
+.opcoes-disp{
+    display: flex;
+    grid-gap:24px;
+    justify-content: center;
+    list-style: none;
+    margin: 20px 0;
+}
+
+.links{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    font-size: 11px;
+    line-height: 21px;
+    flex-wrap: wrap;
+    margin: 0 auto 15px;
+    padding: 0;
+}
+.links li{
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+
+}
+/*Footer*/
+footer{
+    display: flex;
+    max-width: 1024px;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 2vw;
+}
+.footer-logo{
+    margin-bottom: 10px;
+    max-width: 120px;
+    margin: 0 auto;
+}
+footer a{
+    text-decoration: none;
+}
+/*Responsivo*/
+@media screen and (min-width: 1025px) {
+    .inicio{
+        padding-top:28vw;
+    }
+    .conteudo{
+        max-width: 740px;
+    }
+    h1{
+        font-size: 44px;
+        line-height: 54px;
+    }
+    h2{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    h3{
+        font-size: 28px;
+        line-height: 38px;
+    }
+    h5{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .planos, .opcoes{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .item{
+        padding: 60px 44px 44px;
+        
+    }
+    .planos > p{
+        font-size: 12px;
+        line-height: 22px;
+    }
+    .series h2{
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 24px;
+    }
+    .links{
+        font-size: 12px;
+        line-height: 22px;
+    }
+}
+@media screen and (max-width:1024px) {
+    .inicio{
+        padding-top:28vw;
+        background-image: url("/static/img/background2.jpg'");
+    }
+    h2,h3{
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .conteudo{
+        max-width: 640px;
+    }
+}
+@media screen and (min-width:769px) {
+    .simpsons-image{
+        position: relative;
+    }
+    .simpsons > div{
+        display: flex;
+        flex-direction: column;
+        padding-left: 5vw;
+    }
+}
+@media screen and (max-width:768px) {
+    .inicio{
+        padding-top:50vw;
+        background-image: url("/static/img/background3.jpg'");
+    }
+    .conteudo{
+        max-width: 540px;
+    }
+    .combos{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+    .item-combo{
+        justify-content: center;
+        width: 100%;
+        font-size: 30px;
+    }
+    .img-combo{
+        margin-bottom: 3vw;
+    }
+    .btn-assinar{
+        font-size: 20px;
+    }
+    .marcas{
+        flex-direction: column-reverse;
+        padding: 10vw 5vw;
+    }
+    .item-marca{
+        width: 100%;
+        text-align: center;
+    }
+    /*Simpsons Section*/
+    .simpsons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        background-color: #1373d1;
+
+    }
+    .simpsons > div{
+        position: static;
+        width: 100%;
+        text-align: center;
+    }
+    .simpsons-image{
+        position: relative;
+        top: 3px;
+    }
+    .opcoes-disp{
+        flex-wrap: wrap;
+    }
+    .opcoes-disp .item{
+        min-width: calc(50% - 16px);
+        flex:0 0 calc(33.3% - 16px);
+    }
+}   

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Plus</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='register-style.css')}}" type="text/css">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='/img/star.ico')}}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/avenir_ff/AvenirLTStd-Black.otf')}}">
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <div class="btn-entrar">
+                <a href="/">VOLTAR</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="logo">
+            <img src="{{ url_for('static', filename='/img/starplus.svg')}}" alt="star plus logo" width="180px">
+        </section>
+        <section class="inicio">
+            <form action="/registrar" method="POST">
+                <h2>Digite o seu e-mail</h2>
+                <p class="paragrafo">Já tem uma conta do Disney+? Use o mesmo
+                    e-mail para facilitar o login e o pagamento.</p>
+                <fieldset>
+                    <legend>email</legend>
+                    <span>
+                        <input type="email" name="email" id='email' placeholder="E-mail" required>
+                    </span>
+                </fieldset>
+                <h2>Agora digite sua senha</h2>
+                <fieldset>
+                    <legend>email</legend>
+                    <span>
+                        <input type="password" name="senha" id='senha' placeholder="Senha" required>
+                    </span>
+                </fieldset>
+                <input class="btn" type="submit" value="REGISTRAR">
+            </form>
+            <p class="paragrafo">Já possui uma conta Star+?</p>
+            <a class="link" href="login">Entrar</a>
+            <div class="direitos">
+                <p class="politica">A Disney usará os seus dados para oferecer e dar suporte aos serviços, personalizar e melhorar a sua experiência no Star+ e 
+                    para enviar informações relacionadas ao serviço. Você pode alterar as preferências de comunicação quando quiser. Podemos 
+                    usar esses dados conforme explica a nossa <a href="https://www.starplus.com/pt-br/legal/política-de-privacidade?type=bundle"> Política de privacidade</a>, inclusive compartilhá-los com as 
+                    Empresas do grupo Walt Disney. Ao clicar em "Registrar", você confirma que leu a nossa <a href="https://www.starplus.com/pt-br/legal/política-de-privacidade?type=bundle"> Política de privacidade</a>  
+                    e os termos específicos aplicáveis ao Brasil.</p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

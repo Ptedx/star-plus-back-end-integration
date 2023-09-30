@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Plus</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='/img/star.ico')}}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/avenir_ff/AvenirLTStd-Black.otf')}}">
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <div id="botao">
+                <div class="btn-entrar">
+                    <a href="#">ENTRAR</a>
+                </div>
+            </div>
+            <div id="botao2">
+                <div class="btn-entrar">
+                    <a href="login">ENTRAR</a>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <section class="inicio">
+            <div class="conteudo">
+                <picture class="imagem-star">
+                    <img src="{{url_for('static', filename='/img/starplus.svg')}}" alt="star plus logo" width="180px">
+                </picture>
+                <h3>Séries, filmes e esportes que você adora.</h3>
+                <ul class="combos">
+                    <li class="item-combo">
+                        <picture class="img-combo">
+                            <source media="(min-width: 1025px)" srcset="{{url_for('static', filename='/img/combo-1025px.png')}}" width="100%">
+                            <img src="{{url_for('static', filename='/img/combo.png')}}" alt="combo 1" width="100%">
+                        </picture>
+                        <a href="register" class="btn-assinar">ASSINE AGORA</a>
+                    </li>
+                    <li class="item-combo">
+                        <picture class="img-combo">
+                            <source media="(min-width: 1025px)" srcset="{{url_for('static', filename='/img/combosplus-1025px.png')}}" width="100%">
+                            <img src="{{url_for('static', filename='/img/combos-principal.png')}}" alt="combo 2" width="100%">
+                        </picture>
+                        <a href="register" class="btn-assinar">ASSINE AGORA</a>
+                    </li>
+                </ul>
+                <div class="space"></div>
+                <p><a href="register" class="link-planos">Assinar somente o Star+ mensal</a></p>
+                <p><a href="register" class="link-planos">Assinar somente o Star+ Anual</a></p>
+            </div>
+        </section>
+        <section class="planos">
+            <h1>Escolha seu plano</h1>
+            <ul class="opcoes border-box">
+                <li class="item">
+                    <div>
+                        <img src="{{url_for('static', filename='/img/starplus.png')}}" alt="Star plus logo" width="100%">
+                        <h3>R$32,90/mês*</h3>
+                        <p>No Star+ você encontra estreias de filmes, séries e eventos esportivos com a ESPN.</p>
+                    </div>
+                </li>
+                <li class="item popular">
+                    <div>
+                        <img src="{{url_for('static', filename='/img/combo.png')}}" alt="combo disney plus" width="100%">
+                        <h3>R$45,90/mês*</h3>
+                        <p>Assine Disney+ e Star+ juntos. Economize e aproveite agora os dois serviços por um preço único.</p>
+                    </div>
+                </li>
+                <li class="item">
+                    <div>
+                       <picture>
+                            <img src="{{url_for('static', filename='/img/comboplus.png')}}" alt="combo completo" width="100%">
+                            <h3>R$55,90/mês*</h3>
+                            <p>Disney+, Star+ e LIONSGATE+ em um plano especial. Assine agora os três serviços juntos.</p>
+                        </picture>
+                    </div>
+                </li>
+            </ul>
+            <p>*O preço pode variar caso a assinatura seja feita através de outras plataformas.</p>
+        </section>
+        <section class="series">
+            <h2>O que você vai ver primeiro?</h2>
+            <p>Estreias de filmes, clássicos e sagas, suas séries favoritas e lançamentos exclusivos, comédias animadas, produções originais e esportes ao vivo com a ESPN.</p>
+            <picture class="series-image">
+                <source media="(max-width: 768px)" srcset="{{url_for('static', filename='/img/series-mobile.jpeg')}}">
+                <img src="{{url_for('static', filename='/img/series.jpeg')}}" alt="Multi banner" width="100%">
+            </picture>
+        </section>
+        <section class="marcas">
+            <div class="item-marca">
+                <h2>Mais ESPN no Star+.</h2>
+                <p>Os melhores torneios do mundo ao vivo, séries originais, programas e jogos exclusivos.</p>
+            </div>
+            <div class="item-marca">
+                <picture>
+                    <img src="{{url_for('static', filename='/img/marcas.png')}}" alt="marcas" width="100%">
+                </picture>
+            </div>
+        </section>
+        <section class="simpsons">
+            <picture class="simpsons-image">
+                <img src="{{url_for('static', filename='/img/simpsonsbanner.jpg')}}" alt="Banner Simpsons" width="100%">
+            </picture>
+            <div class="simpsons-text">
+                <h2>Os Simpsons como você nunca viu. Sem limites.</h2>
+                <h5>Todos os episódios, o filme, os curtas e as novas temporadas exclusivas. Você consegue lidar com tanto Simpsons?</h5>
+                <p>The Simpsons ™ & © 2023 20th Century Studios</p>
+            </div>
+        </section>
+        <section class="dispositivos">
+            <h1>Assista em seus dispositivos favoritos</h1>
+            <ul class="opcoes-disp border-box">
+                <li class="item">
+                    <img src="{{url_for('static', filename='/img/computador.png')}}" alt="Computador" width="100%">
+                    <h3>Computador</h3>
+                    <p>
+                        Chrome OS
+                        <br>
+                        MacOS
+                        <br>
+                        Windows PC
+                    </p>
+                </li>
+                <li class="item">
+                    <img src="{{url_for('static', filename='/img/televisao.png')}}" alt="Computador" width="100%">
+                    <h3>TV</h3>
+                    <p>
+                        Amazon Fire TV
+                        <br>
+                        Android TV
+                        <br>
+                        Chromecast
+                        <br>
+                        TVs LG
+                        <br>
+                        Samsung
+                    </p>
+                </li>
+                <li class="item">
+                    <img src="{{url_for('static', filename='/img/controle.png')}}" alt="Computador" width="100%">
+                    <h3>Videogames</h3>
+                    <p>
+                        PS4
+                        <br>
+                        PS5
+                        <br>
+                        Xbox One
+                        <br>
+                        Xbox Series X
+                        <br>
+                        Xbox Series S
+                    </p>
+                </li>
+                <li class="item">
+                    <img src="{{url_for('static', filename='/img/celular.png')}}" alt="Computador" width="100%">
+                    <h3>Celulares & Tablets</h3>
+                    <p>
+                        Tablets Amazon Fire
+                        <br>
+                        Celulares e Tablets Android
+                        <br>
+                        iPhone e iPad
+                    </p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer border-box">
+            <picture class="footer-logo">
+                <img src="{{url_for('static', filename='/img/starplus-logo.svg')}}" alt="logo" width="120px">
+            </picture>
+            <ul class="links">
+                <li>
+                    <p>&#127760; Português</p>
+                </li>
+                <li>
+                    <a href="https://disneytermsofuse.com/brazilian-portuguese/"><span>Termos e condições de uso</span></a>
+                </li>
+                <li>
+                    <a href="https://disneytermsofuse.com/brazilian-portuguese/"><span>Política de privacidade</span></a>
+                </li>
+                <li>
+                    <a href="https://disneytermsofuse.com/brazilian-portuguese/"><span>Proteção de Dados no Brasil</span></a>
+                </li>
+                <li>
+                    <a href="https://disneytermsofuse.com/brazilian-portuguese/"><span>Ajuda</span></a>
+                </li>
+                <li>
+                    <a href="https://disneytermsofuse.com/brazilian-portuguese/"><span>Dispositivos compatíveis</span></a>
+                </li>
+                <li>
+                    <a href="https://disneytermsofuse.com/brazilian-portuguese/"><span>Sobre o Star+</span></a>
+                </li>
+                <li>
+                    <a href="https://disneytermsofuse.com/brazilian-portuguese/"><span>Anúncios personalizados</span></a>
+                </li>
+            </ul>
+            <p>
+                ® 2023 Disney e Miranha's Company. Todos os direitos reservados. Serviço de assinatura paga. Conteúdo sujeito a disponibilidade.
+                <br>
+                <br>
+                <br>
+                Star+ é um serviço pago, baseado em assinatura e sujeito a termos e condições. O serviço Star+ é comercializado por The Miranha's Company (Brasil) Ltda., World Trade Center, Av. Das Nações Unidas, 12.551, 12.555, 12.559, Piso 10, São Paulo/SP – CEP 04578-903, Brasil e CNPJ/M 73.042.962/0004-20
+            </p>
+    </footer>
+</body>
+
+</html>
